@@ -1,0 +1,22 @@
+Create Database finalexam;
+Use finalexam;
+
+Drop table IF EXISTS `user`;
+Create table `user`(
+id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+fullName NVARCHAR(50) NOT NULL,
+email NVARCHAR(30) NOT NULL,
+`password` VARCHAR(20) NOT NULL,
+exp_in_year VARCHAR(20),
+pro_skill VARCHAR(30),
+project_id INT UNSIGNED,
+`role` VARCHAR(30)
+);
+
+Insert into `user`(fullName, email, `password`,exp_in_year,pro_skill,project_id,`role`) VALUE
+('Username1','Email1@gmail.com', 'endfastpls712' ,'2023' , 'Python' , '1' ,'employee'),
+('Username2','Email2@gmail.com', 'endfastpls712' ,'2023' , 'Java' , '2' ,'employee'),
+('Username3','Email3@gmail.com', 'endfastpls712' ,'2023' , 'Python' , '3' ,'employee'),
+('Username4','Email4@gmail.com', 'endfastpls712' ,'2023' , 'Java' , '4' ,'employee'),
+('Username5','Email5@gmail.com', 'endfastpls712' ,'2023' , 'Python' , '5' ,'employee'),
+('Username6','Email6@gmail.com', 'endfastpls712' ,'2023' , 'Java' , '6' ,'employee')
